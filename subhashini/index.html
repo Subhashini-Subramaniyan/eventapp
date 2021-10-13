@@ -1,105 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/tailwind.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>Document</title>
+<html>
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <title>Event App</title>
 </head>
+
 <body>
-    <div class="container p-20 m-10 ">
+
+  <div>
+    <nav class="bg-yellow-400 shadow-lg">
+      <div class="">
+          <div class="flex justify-start">
+              <div class="flex">
+  
+                  <!-- Primary Navbar items -->
+                  <div class="hidden md:flex items-start">
+  
+  
+                      <a href="#first-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">first-link</a>
+                      <a href="#second-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">second-link
+                          </a>
+                      <a href="#third-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">third-link</a>
+                          <a href="#fourth-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">fourth-link</a>
+                          <a href="#details"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">details
+                        </a>
+                  </div>
+              </div>
+              <!-- Secondary Navbar items -->
+              <div class="hidden md:flex items-center text-sm space-x-0.5">
+                  <a href="Click.html"
+                  class="py-2 px-2 font-medium text-white bg-blue-600 rounded hover:bg-blue-900 transition duration-300">Click it
+              </a>
+                  <a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
+                      class="py-2 px-2 font-medium text-white bg-green-400 rounded hover:bg-green-900 transition duration-300"> show more
+                  </a>
+              </div>
+              <!-- Mobile menu button -->
+              <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                      <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+          <ul class="">
+              <li class="active"><a href="index.html"
+                      class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+  
+              <li><a href="#first-link"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">first-link</a></li>
+              <li><a href="#second-link"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">second-link</a></li>
+              <li><a href="#third-link"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">third-link</a></li>
+                      <li><a href="#fourth-link"
+                          class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">fourth-link</a></li>
+  
+              <li><a href="#Details"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Details</a></li>
+          </ul>
+      </div>
+  
+  </nav>
+  
+  </div>
+
+    <div class="container m-10 p-20">
         <div class="text-lg">
-            <h3 class="font-bold m-4">MY BUTTONS</h3>
-            <div>
+            MY BUTTONS
+            <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-3 my-8">
                 <div>
-        <button class="bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-8 px-20 rounded m-4">
-            WELCOME
-       </button>
-    </div>
-    <div>
-        <button class="bg-green-800 hover:bg-green-300 text-white text-center py-2 px-4 rounded-full m-4">
-            off
-        </button>
-    </div>
-    <div>
-        <button class="bg-gray-500 hover:bg-gray-300 text-white text-center py-2 px-4 rounded-full h-14 w-14 inline-flex items-center m-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-            </svg>
-        </button>
-        <div>
-            <button class="bg-red-700 hover:bg-red-200 text-black text-center py-2 px-4 rounded-full m-4">
-              on
-            </button>
-            <div>
-                <button class="bg-pink-500 hover:bg-pink-100 border-b-4 border-gray-400 hover:border-gray-200 text-black text-center py-2 px-4 rounded m-4">
-                  1
-                </button>
-                <div>
-                    <button class="bg-blue-800 hover:bg-gray-700 border-b-4 border-black hover:border-gray-800 text-white text-center py-2 px-4 rounded m-4">
-                      2
-                    </button>
-                    </div>
-                    <div>
-                        <button class="bg-pink-900 hover:bg-pink-400 border-b-4 border-red-700 hover:border-red-500 text-white text-center py-2 px-4 rounded m-4">
-                          3
-                        </button>
-                        <div>
-                            <button class="bg-red-500 hover:bg-red-400 border-b-4 border-red-700 hover:border-red-500 text-white text-center py-2 px-4 rounded m-4">
-                              4
-                            </button>
-                            </div>
-                            <div>
-                                <button class="bg-yellow-800 hover:bg-yellow-600 border-b-4 border-yellow-900 hover:border-yellow-400 text-white text-center py-2 px-4 rounded m-4">
-                                  5
-                                </button>
-                                </div>
-                                <div>
-                                    <button class="bg-purple-800 hover:bg-purple-400 border-b-4 border-purple-900 hover:border-purple-300 text-white text-center py-2 px-4 rounded m-4">
-                                        6
-                                    </button>
-                                    </div> 
-                                    <div>
-                                        <button class="bg-yellow-500 hover:bg-yellow-400 border-b-4 border-yellow-700 hover:border-yellow-500 text-white text-center py-2 px-4 rounded m-4">
-                                          7
-                                        </button>
-                                        </div>  
-                                        <div>
-                                            <button class="bg-green-500 hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white text-center py-2 px-4 rounded m-4">
-                                              8
-                                            </button>
-                                            </div> 
-                                            <div>
-                                                <button class="bg-blue-500 hover:bg-blue-400 border-b-4 border-blue-700 hover:border-blue-500 text-white text-center py-2 px-4 rounded m-4">
-                                                  9
-                                                </button>
-                                                </div>
-                                                <div>
-                                                    <button class="bg-indigo-500 hover:bg-indigo-400 border-b-4 border-indigo-700 hover:border-indigo-500 text-white text-white text-center py-2 px-4 rounded m-4">
-                                                      *
-                                                    </button>
-                                                    </div> 
-                                                    <div>
-                                                        <button class="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-white text-white text-center py-2 px-4 rounded m-4">
-                                                          0
-                                                        </button>
-                                                        </div> 
-                                                        <div>
-                                                            <button class="bg-pink-500 hover:bg-pink-400 border-b-4 border-pink-700 hover:border-pink-500 text-white text-white text-center py-2 px-4 rounded m-4">
-                                                              #
-                                                            </button>
-                                                            </div>                         
-                        </div>
+                    <a href="#" class="bg-green-400 hover:bg-red-700 text-white text-center py-2 px-4 rounded inline-flex items-center">
+                        Button 1
+                    </a>
                 </div>
-            </div>
-    </div>
+                <div>
+                    <a href="#" class="bg-purple-500 hover:bg-gray-700 text-white text-center py-2 px-4 rounded inline-flex items-center">
+                        Button 2
+                    </a>
+                </div>
+                <div>
+                    <a href="#"
+                        class="bg-transparent border border-pink-500 text-gray-500 hover:bg-pink-600 hover:text-white text-center py-2 px-4 rounded-full  ">
+                        Button 3
+                    </a>
+                </div>
+              
             </div>
         </div>
-
+        <div>
+            <div class="text-lg my-4">
+                Reference
+            </div>
+            <div>
+                https://www.ordinarycoders.com/blog/article/7-tailwindcss-buttons
+            </div>
+        </div>
     </div>
 
+    <script>
+
+		const btn = document.querySelector("button.mobile-menu-button");
+		const menu = document.querySelector(".mobile-menu");
+
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+		});
+    </script>
+
 </body>
-</html> 
+
+</html>
